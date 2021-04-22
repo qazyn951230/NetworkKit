@@ -50,7 +50,7 @@ public struct HttpResponse: HttpMessage {
             headers: .from(headers), body: body)
     }
 
-    public struct Status: RawRepresentable {
+    public struct Status: RawRepresentable, Equatable {
         public let rawValue: UInt
 
         public init(rawValue: UInt) {
